@@ -14,14 +14,14 @@
           <h1>Are your SPAs safe?</h1>
           <div class="byline">
             <div class="classy">
-              by Martin Gontovnikas
+              by Eugenio Pace
             </div>
           </div>
           <div class="profile">
             <div class="rounded-image">
               <img src="img/gonto.jpeg">
             </div>
-            <h3>@mgonto</h3>
+            <h3>@eugenio_pace</h3>
           </div>
         </div>
       </section>
@@ -36,7 +36,7 @@
           <h2>software developer</h2>
           <div class="byline">
             <div class="classy">
-              from Buenos Aires, Argentina
+              from Redmond, WA
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
           <h3>Auth0 Inc.</h3>
           <div class="byline">
             <div class="classy">
-              making stuff happen
+              jack of all trades
             </div>
           </div>
         </div>
@@ -82,10 +82,10 @@
         <div class="content">
           <div class="byline">
             <div class="classy">
-              Now I work as a
+              Now I work in
             </div>
           </div>
-          <h3>Developer Advocate</h3>
+          <h3>Customer Success</h3>
           <div class="unbrokenline"></div>
         </div>
       </section>
@@ -98,10 +98,10 @@
         <div class="content">
           <div class="byline">
             <div class="classy">
-              We're here to learn if
+              We're here to learn
             </div>
           </div>
-          <h3>your SPAs are safe?</h3>
+          <h3>most common security issues in SPAs</h3>
           <div class="byline">
           </div>
         </div>
@@ -109,7 +109,7 @@
 
       <section>
         <div class="content">
-          <h2>So Let's dive into the talk</h3>
+          <h2>Let's dive...</h3>
         </div>
       </section>
 
@@ -194,7 +194,7 @@
 
       <section>
         <div class="content">
-          <h2>Everything has changed</h2>
+          <h2>Everything has changed!</h2>
         </div>
       </section>
 
@@ -208,7 +208,7 @@
           <h3>We need to learn</h3>
           <div class="byline">
             <div class="classy">
-              the new
+             new
             </div>
           </div>
           <h3>Security Concerns</h3>
@@ -227,13 +227,13 @@
 
       <section>
         <div class="content">
-          <h2>Don't worry, I'll help you out</h2>
+          <h2>Don't worry, we're here to help you</h2>
         </div>
       </section>
 
       <section>
         <div class="content">
-          <h2>Let's start with the common ones</h2>
+          <h2>Let's start with the simple one</h2>
         </div>
       </section>
 
@@ -302,13 +302,13 @@
 
       <section>
         <div class="content">
-          <h2>This atack uses cookies from the Logged in user</h2>
+          <h2>This attack uses cookies from a previously logged in user</h2>
         </div>
       </section>
 
       <section>
         <div class="content">
-          <h2>So how do we prevent it in SPAs?</h2>
+          <h2>How do we prevent this in SPAs?</h2>
         </div>
       </section>
 
@@ -362,7 +362,7 @@ app.post('/api/change-email', function(req, res) {
   // Custom change email logic
 });
 </code></pre>
-        <p>From the server, we validate the <a class="big-label" href="https://docs.auth0.com/jwt">JWT Token</a></p>
+        <p>On the server, we validate the <a class="big-label" href="https://docs.auth0.com/jwt">JWT Token</a></p>
         </div>
       </section>
 
@@ -393,7 +393,7 @@ app.post('/api/change-email', function(req, res) {
               but also
             </div>
           </div>
-          <h3>send a XSRF Nounce </h3>
+          <h3>send a XSRF Nonce</h3>
           <div class="unbrokenline"></div>
         </div>
       </section>
@@ -443,24 +443,24 @@ app.post('/api/change-email', function(req, res) {
   }
 });
 </code></pre>
-        <p>From the server, first we print the XSRF in the <dfn>index.html</dfn> to the SPA</p>
-        <p>Then we verify that XSRF in the POST on the API</p>
+        <p>From the server, first we print the XSRF token in the <dfn>index.html</dfn> to the SPA</p>
+        <p>Then we verify that the XSRF token in the POST on the API</p>
         </div>
       </section>
 
       <section>
         <div class="content">
           <div class="unbrokenline"></div>
-          <h3>XSRF Nounce</h3>
+          <h3>XSRF Nonce</h3>
           <div class="byline">
             <div class="classy">
               assures that
             </div>
           </div>
-          <h3>the person POSTing the form</h3>
+          <h3>the user POSTing the form</h3>
           <div class="byline">
             <div class="classy">
-              did it
+              obtained it
             </div>
           </div>
           <h3>from our WebApp</h3>
@@ -604,8 +604,8 @@ app.post('/api/change-email', function(req, res) {
   request({
     url: 'http://yourserver.com/api/signup',
     json: {
-      name: 'Gonto' + i,
-      email: 'gonto@gonto' + i + '.com'
+      name: 'User' + i,
+      email: 'user@mail' + i + '.com'
     }
   });
 }</code></pre>
@@ -662,7 +662,7 @@ app.post('/api/signup', rateMiddleware, function(req, res) {
               should have
             </div>
           </div>
-          <h3>Request throtling</h3>
+          <h3>Request throttling</h3>
           <div class="byline">
             <div class="classy">
               to avoid
@@ -807,7 +807,7 @@ app.get('/users', validate.query(getUserValidationSchema), function (req, res) {
               that will be
             </div>
           </div>
-          <h3>Server to other users</h3>
+          <h3>Served to other users</h3>
           <div class="unbrokenline"></div>
         </div>
       </section>
@@ -841,7 +841,7 @@ app.get('/users', validate.query(getUserValidationSchema), function (req, res) {
           <h3>vulnerable</h3>
           <div class="byline">
             <div class="classy">
-              to this atack
+              to this attack
             </div>
           </div>
         </div>
@@ -859,7 +859,7 @@ app.get('/users', validate.query(getUserValidationSchema), function (req, res) {
           <h3>not vulnerable</h3>
           <div class="byline">
             <div class="classy">
-              to this atack since they
+              to this attack since they
             </div>
           </div>
           <h3>can't be accessed</h3>
@@ -923,14 +923,14 @@ app.get('/users', validate.query(getUserValidationSchema), function (req, res) {
           <h1>Are your SPAs safe?</h1>
           <div class="byline">
             <div class="classy">
-              by Martin Gontovnikas
+              by Eugenio Pace
             </div>
           </div>
           <div class="profile">
             <div class="rounded-image">
               <img src="img/gonto.jpeg">
             </div>
-            <h3>@mgonto</h3>
+            <h3>@eugenio_pace</h3>
           </div>
         </div>
       </section>
